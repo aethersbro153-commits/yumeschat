@@ -1,15 +1,4 @@
-# frontend/netlify.toml
-
 [build]
-  base    = "frontend"          # Your frontend folder
-  publish = "dist"              # Where Vite outputs the build
-  command = "npm run build"     # Build command
-
-[build.environment]
-  VITE_API_URL = "https://yumeschat.onrender.com"  # Your backend URL
-
-# Optional: redirect all routes to index.html for React Router
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  base = "frontend"
+  publish = "dist"
+  command = "npm run build"
